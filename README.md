@@ -23,4 +23,4 @@ Here are a few preliminary questions:
 
 **Communication Protocols**
 
-Individual slack group to message and keep in touch, and weekly zoom calls to track group progress.
+Individual slack group to message and keep in touch, planning in google docs, and zoom calls to track group progress.
