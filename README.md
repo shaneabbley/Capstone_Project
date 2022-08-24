@@ -10,7 +10,8 @@ There are a lot of different types of cancers and there's a lot of data being ge
 
 - *Description of the source of data*
 
-The data is part of cleaned, encoded dataset from kaggle
+The data is part of cleaned, encoded dataset from [kaggle](https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data?resource=download) which pulls from this [source](https://data.world/cancerdatahp/lung-cancer-data/workspace/file?filename=cancer+patient+level%20data+sets.xlsx) 
+
 
 - *Questions we hope to answer with this data*
 
