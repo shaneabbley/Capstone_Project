@@ -8,15 +8,15 @@ The relation between good and bad lifestyle choices as it relates to the inciden
 
 There are a lot of different types of cancers and there's a lot of data being generated for this. It will be interesting to see if there are any factors that are associated with higher cancer incidence
 
-## Data Exploration 
-
-- *Description of the source of data*
+## Data Source
 
 https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data
 - We are using a cleaned verison of “Cancer Patients Data” which is an excel file gathered from Kaggle. This file contains hundreds of lung cancer patients data about their lifestyles. We converted this excel file to a csv and removed columns that we felt would not be useful. Leaving us with the columns shown here.
 ![Screen Shot 2022-08-28 at 2 07 30 PM](https://user-images.githubusercontent.com/103154070/187778715-8747f6a1-5f50-4879-a4ca-c5fd8ff24447.png)
 
 -   We also renamed the labels for the “Cancer Severity” column; replacing “Low,” “Medium,” and “High” with “1,  2 and 3” respectively. This step was completed in order to prevent any ValueErrors that we may receive while completing our analysis.
+
+## Data Exploration
 
 
 ## Data Analysis 
@@ -42,10 +42,34 @@ Individual slack group to message and keep in touch, planning in google docs, an
 
 *Splitting Data into training and testing sets*
 
-*Model Choice Explanation*
+*Model Choice Explanation- include limitations and benefits*
+
+*Explanation of any changes that were made to the model*
+
+*Description of how the model was trained*
+
+*Description and explanation of model's confusion matrix-include final accuracy score*
 
 ## Dashboard 
-
+*Inlcude link to dash or a video of dash demo*
 *Tools we used*
 
 *Interactive Elements*
+
+## Database 
+
+*Description of interface with the project*
+*Description of two tables used*
+*Description of join/s*
+*Description of connection string*
+
+
+## Results 
+
+## Reccomendations for Future Analysis
+*include anything that we would have done differently*
+
+
+
+*Google Slides Presentation*
+https://docs.google.com/presentation/d/1w9SX7ncPKxl14IUaS30NbZy669UUpW76sN9ZRtEoHUQ/edit#slide=id.g146a7b7e24b_0_65
