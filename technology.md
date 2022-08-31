@@ -11,9 +11,7 @@
 
 ## Machine Learning
 - SciKit Learn is the ML library we'll be using to create a classifier. 
-    - K means clustering- check 
-    - Lasso Regression- check 
-    - Decision Tree- check 
+    - Logistic Regression
     - Liner SVC for Accuracy Score and Confusion Matrix
     
 
@@ -22,6 +20,6 @@
 - HTML
 
 ##  Database
-- MongoDB
+- SQlite
 - pgAdmin
-- Flask
+
