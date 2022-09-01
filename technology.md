@@ -22,6 +22,5 @@
 
 ##  Database
 - SQlite
-- pgAdmin
-- -Flask
+- Flask
 
