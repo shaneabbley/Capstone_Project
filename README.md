@@ -28,6 +28,19 @@ Here are a few preliminary questions:
 3. Are there multiple lifestyle factors that are associated higher incidence
 
 ## Project Outline
+1. Find and clean data
+2. Analyze data to determine which ML model will work best for our dataset 
+3. Run various models using Supervised Machiene Learning techiniques.
+4. Create ERD with relationships for database.
+5. Create database in PGAdmin.
+6. Determine how the database will interact with the model.
+7. Create tables, join and connection string bewteen database and the model.
+8. Create the blueprint for the dashboard and add storyboard to Google Slides. - Creating two databases
+9. Evaluate what tools will be used to create dashboard.
+10. Create vizualizations for dashboard.
+11. Disucss results of analysis- what are the top 3 symtoms for each level of cancer severity?
+12. Analyze what could have been done better for optimum results.
+
 
 ## Communication Protocols
 
@@ -51,7 +64,7 @@ Individual slack group to message and keep in touch, planning in google docs, an
 *Description and explanation of model's confusion matrix-include final accuracy score*
 
 ## Dashboard 
-*Inlcude link to dash or a video of dash demo*
+*Include link to dash or a video of dash demo*
 *Tools we used*
 
 *Interactive Elements*
