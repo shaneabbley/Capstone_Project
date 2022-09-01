@@ -10,6 +10,7 @@
     - Seaborn (Statistical Analysis) 
 
 ## Machine Learning
+- Python (Jupyter Notebook)
 - SciKit Learn is the ML library we'll be using to create a classifier. 
     - Logistic Regression
     - Liner SVC for Accuracy Score and Confusion Matrix
