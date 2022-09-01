@@ -19,8 +19,10 @@ https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data
 ## Data Exploration
 
 
+
 ## Data Analysis 
 
+cleaned up intial data seperated between lifestyle data and symptoms of cancer.  After determining to keep lifestlye due to our desired outcome, we removed the columns that referred to symtoms and created a new df that will be used for our model.  
 
 Here are a few preliminary questions:
 1. Is there any lifestyle choice that is connected to higher incidence of cancer
@@ -81,6 +83,10 @@ Individual slack group to message and keep in touch, planning in google docs, an
 
 ## Reccomendations for Future Analysis
 *include anything that we would have done differently*
+
+
+bin scores and create a pie graph from those different levels- look into pandas module and have that connected to an html file 
+on viz with M
 
 
 
