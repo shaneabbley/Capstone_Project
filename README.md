@@ -65,9 +65,16 @@ Individual slack group to message and keep in touch, planning in google docs, an
 
 ## Dashboard 
 *Include link to dash or a video of dash demo*
-*Tools we used*
+
+*Tools Used to Build and Run the Dashboard are as follows*
+- Javascript (d3.json)
+- Bootstrap components
+- HTML
+- Visual Studio Code
+- Pandas
 
 *Interactive Elements*
+- User will be able to input patient ID to see symptom scores and lifestyle choices as a bar graph
 
 ## Database 
 
