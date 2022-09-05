@@ -30,13 +30,14 @@ Individual slack group to message and keep in touch, planning in google docs, an
 ## Data Source
 
 https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data
-- We are using a cleaned verison of “Cancer Patients Data” which is an excel file gathered from Kaggle. This file contains hundreds of lung cancer patients data about their lifestyles. We converted this excel file to a csv and removed columns that we felt would not be useful. Leaving us with the columns shown here.
+
+This is an excel document that list hundreds of cancer patient lifestlye.  This includes a combination of lifestlye choices and symptoms presented in each patient.  There are a total of 25 columns and 1000 rows within this dataset.
+
+## Data Exploration
+- We are using a cleaned verison of “Cancer Patients Data” which is the excel file gathered from Kaggle. We converted this excel file to a csv and removed columns that represented symptoms as those would not be useful in our analysis. After doing this, weare left with the columns shown here.
 ![Screen Shot 2022-08-28 at 2 07 30 PM](https://user-images.githubusercontent.com/103154070/187778715-8747f6a1-5f50-4879-a4ca-c5fd8ff24447.png)
 
 -   We also renamed the labels for the “Cancer Severity” column; replacing “Low,” “Medium,” and “High” with “1,  2 and 3” respectively. This step was completed in order to prevent any ValueErrors that we may receive while completing our analysis.
-
-## Data Exploration
-
 
 ## Data Analysis 
 
