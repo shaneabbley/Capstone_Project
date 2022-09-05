@@ -61,7 +61,8 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 <img width="662" alt="Smoking_DA" src="https://user-images.githubusercontent.com/103154070/188458052-c3debc04-b695-495d-bcc2-91fe1f22aab2.png">
 
-![Smoke](https://user-images.githubusercontent.com/103154070/188457274-dd68a020-daf7-469f-a9a9-5da890e3c1a3.png)
+![Smoke](https://user-images.githubusercontent.com/103154070/188466571-10242169-1510-4ebb-af1a-b3f5668087bc.png)
+
 
 - Notice that more of the patients within our dataset stated that the did not smoke compared those that were the heavier smokers.
 - If we calculate the highest two levels compared to our lowest two levels: (89+207) : (181+222) = 296:403 <-- So we can see that more of our patients do not smoke within this dataset.
@@ -69,7 +70,8 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 <img width="852" alt="Passive_Smoker_DA" src="https://user-images.githubusercontent.com/103154070/188458171-d35b4965-1c79-4a70-8ca5-caa27aa3b834.png">
 
-![Passive](https://user-images.githubusercontent.com/103154070/188457290-1f78c6b9-1900-4b03-a5b8-73e6fe827570.png)
+![Passive](https://user-images.githubusercontent.com/103154070/188466588-61d37c33-9d5c-49ac-8390-77228673ed69.png)
+
 
 - Within the group of passive smokers there were 108 patients that identified as the heaviest level of passive smoking.  This is higher than those that were found in the smoker column. 
 - The highest level of passive smoking (level 8) was only represented in the highest cancer severity level.  
@@ -77,7 +79,8 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 <img width="721" alt="Alcohol_use_DA" src="https://user-images.githubusercontent.com/103154070/188458195-bcbe9cdf-a443-42bd-8bb3-3771462763ae.png">
 
-![AU](https://user-images.githubusercontent.com/103154070/188457304-4291249e-c588-4a41-852d-fb8cb074c5b5.png)
+![AU](https://user-images.githubusercontent.com/103154070/188466612-0fba69a1-1ce5-4043-a03b-88ef60603125.png)
+
 
 - Within the group of alcohol users there were 188 patients that identified as having heavy alcohol comsumption. Those patients are only reflected in cancer severity levels 2 and 3.
 - If we calculate the highest two levels compared to our lowest two levels: (188+167):(152+202)= 355:354 <-- These are extremely close.
