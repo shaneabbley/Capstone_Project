@@ -122,7 +122,7 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 ## Results 
 
-## Reccomendations for Future Analysis
+## Recommendations for Future Analysis
 *include anything that we would have done differently*
 
 
