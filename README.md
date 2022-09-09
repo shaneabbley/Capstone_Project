@@ -18,10 +18,6 @@ We are seeking an understanding between lifestyle choices as it relates to the i
 12. Analyze what could have been done better for optimum results.
 
 
-## Communication Protocol
-
-We will be using individual slack group to message and keep in touch, planning in google docs, and zoom calls to track group progress. We have been meeting Mondays and Wednesdays for 30 minutes before class time to connect and discuss indivdual updates that we would like to share with the team.  Our strategy is to have sections of the project that we work on indepently while assuring that we regularly communicate our progress and status updates.
-
 ## Data Source
 
 https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data
