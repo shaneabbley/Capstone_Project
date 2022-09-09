@@ -26,7 +26,7 @@ We will be using individual slack group to message and keep in touch, planning i
 
 https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data
 
-This is an excel document that list hundreds of cancer patient lifestlye.  This includes a combination of lifestlye choices and symptoms presented in each patient.  There are a total of 25 columns and 1000 rows within this dataset.
+This is an excel document that list hundreds of cancer patient lifestyle.  This includes a combination of lifestyle choices and symptoms presented in each patient.  There are a total of 25 columns and 1000 rows within this dataset.
 
 
 
@@ -60,7 +60,7 @@ In order to calculate the amount of patients per cancer severity level, we group
 
 
 
-We want to learn about patterns between lifestyle choices and the severity of cancer.  Since we now have the breakdown per Severity level, we are curisous to learn more about the values represented within each lifestlye choice.  After conducting the value counts per column within our dataframe we took note of the columns with the highest used level (value of 8).  The top 3 columns with the highest usage level were found to be Smokers, Passive Smokers, and Alcohol Users.
+We want to learn about patterns between lifestyle choices and the severity of cancer.  Since we now have the breakdown per Severity level, we are curisous to learn more about the values represented within each lifestyle choice.  After conducting the value counts per column within our dataframe we took note of the columns with the highest used level (value of 8).  The top 3 columns with the highest usage level were found to be Smokers, Passive Smokers, and Alcohol Users.
 
 
 
@@ -191,9 +191,9 @@ We are curious to learn more about the connection between lifestyle choices and 
 
 ## Results 
 
-Although we have found trends between lifestlye choices and the severity level of cancer, within this dataset we can not confidently conclude that there are specific lifestlye choices that will impact a person's ability to develop or increase the severity of the disease.  In our prediction attempts, we discovered that a Support Vector Machine model works best with our dataset, providing an f1-score of 1.00 for the highest severity level, 0.83 for the middle severity level, and 0.80 for the lowest severity level.
+Although we have found trends between lifestyle choices and the severity level of cancer, within this dataset we can not confidently conclude that there are specific lifestyle choices that will impact a person's ability to develop or increase the severity of the disease.  In our prediction attempts, we discovered that a Support Vector Machine model works best with our dataset, providing an f1-score of 1.00 for the highest severity level, 0.83 for the middle severity level, and 0.80 for the lowest severity level.
 
-For a more thorough analysis, it would be helpful to have more context around the lifestlye choices of these patients. Did they increase their engagement in certain choices based on their cancer diagnosis, or were these increased as a result? It would also be beneficial to have a controlled group within our dataset. For example, there could be a group of patients who do not participate in any of the unfavorable/unhealthy lifestlye choices. 
+For a more thorough analysis, it would be helpful to have more context around the lifestyle choices of these patients. Did they increase their engagement in certain choices based on their cancer diagnosis, or were these increased as a result? It would also be beneficial to have a controlled group within our dataset. For example, there could be a group of patients who do not participate in any of the unfavorable/unhealthy lifestyle choices. 
 
 
 *Google Slides Presentation*
