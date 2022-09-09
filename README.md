@@ -89,6 +89,15 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 - If we calculate the highest two levels compared to our lowest two levels: (188+167):(152+202)= 355:354 <-- These are extremely close.
 
 
+
+*What are we interested in predicting*
+
+![PC](https://user-images.githubusercontent.com/103154070/189383560-bfc8e0f3-bbb8-4ad4-ae3a-25cdcab0cdce.png)
+
+- We are curious to learn more about the connection between lifestyle choices and their impact on the severity of cancer seen within our dataset.  From this Pearson Correlation we can notice that the strongest connection to cancer severity is obesity.  It is then followed by Alcohol use, Dust Allergy, Balanced Diet, Genetic Risk and Passive Smoker, respectivly.
+
+
+
 ## Machine Learning Model
 
 *Preliminary Data Preprocessing*
