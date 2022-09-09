@@ -61,7 +61,8 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 <img width="662" alt="Smoking_DA" src="https://user-images.githubusercontent.com/103154070/188458052-c3debc04-b695-495d-bcc2-91fe1f22aab2.png">
 
-![Smoke](https://user-images.githubusercontent.com/103154070/188466571-10242169-1510-4ebb-af1a-b3f5668087bc.png)
+![Smoke](https://user-images.githubusercontent.com/103154070/189126286-3c8bc579-4925-4e13-9599-eaad6050151d.png)
+
 
 
 - Notice that more of the patients within our dataset stated that the did not smoke compared those that were the heavier smokers.
@@ -70,7 +71,8 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 <img width="852" alt="Passive_Smoker_DA" src="https://user-images.githubusercontent.com/103154070/188458171-d35b4965-1c79-4a70-8ca5-caa27aa3b834.png">
 
-![Passive](https://user-images.githubusercontent.com/103154070/188466588-61d37c33-9d5c-49ac-8390-77228673ed69.png)
+![Passive](https://user-images.githubusercontent.com/103154070/189126259-c73d81e2-bc6e-4804-a6ce-bac7289631ed.png)
+
 
 
 - Within the group of passive smokers there were 108 patients that identified as the heaviest level of passive smoking.  This is higher than those that were found in the smoker column. 
@@ -79,7 +81,8 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 <img width="721" alt="Alcohol_use_DA" src="https://user-images.githubusercontent.com/103154070/188458195-bcbe9cdf-a443-42bd-8bb3-3771462763ae.png">
 
-![AU](https://user-images.githubusercontent.com/103154070/188466612-0fba69a1-1ce5-4043-a03b-88ef60603125.png)
+![AU](https://user-images.githubusercontent.com/103154070/189126236-7afee1fe-bf7a-4eac-ae61-3de7b1592c15.png)
+
 
 
 - Within the group of alcohol users there were 188 patients that identified as having heavy alcohol comsumption. Those patients are only reflected in cancer severity levels 2 and 3.
@@ -90,17 +93,66 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 *Preliminary Data Preprocessing*
 
-*Preliminary Feature Engineering/Selection*
+- The data we got from Kaggle had patient id, lifestyle habits , cancel severity(output), and symptoms.
+- We cleaned the data by removing the symptoms as our study involves the corelation of lifestyle habits contributing to the cancer severity
+- The patient ID had a string in it , so we converted it to integer.
+- Next we removed the age as we wanted the model to take into account just the lifestyle habits into consideration.
+
 
 *Splitting Data into training and testing sets*
 
-*Model Choice Explanation- include limitations and benefits*
+- y = CleanedData_df["Cancer Severity"]
 
-*Explanation of any changes that were made to the model*
+- X = CleanedData_df.drop(columns="Cancer Severity")
 
-*Description of how the model was trained*
+- X = X.drop(columns="Age")
 
-*Description and explanation of model's confusion matrix-include final accuracy score*
+- X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state=44, shuffle = True) 
+- X_train.shape
+
+
+*Model Choice Explanation*
+
+- With logistic regression we can solve classification problems with machine learning by estimating the probability a new entry falls in a class. This model will attempt to maximize the conditional likelihood of the training data, but it is highly prone to outliers.  Additionally, by using support vector machines we are able to seperate the data point using a line, which is chosen so that it will be the furthermost from the nearest data points in 2 categories. We chose the logistic regression and the SVM models for predicting the severity level of Cancer as Low, Medium or High. We ran the model with several different solvers and different valuse of iterations. 
+
+![liblinear](https://user-images.githubusercontent.com/103154070/189376274-167f6d9c-4f4b-41eb-86df-86c69388a873.png)
+![libfgs](https://user-images.githubusercontent.com/103154070/189376296-3f940ff0-94c3-4aa1-978c-f2cd73be6522.png)
+
+![Newton](https://user-images.githubusercontent.com/103154070/189376385-4b6e03db-1eb3-41e5-9f8d-75a9968cbe6a.png)
+![sag](https://user-images.githubusercontent.com/103154070/189376330-1f39f102-3555-4bba-a50a-b58189fe4107.png)
+
+![saga](https://user-images.githubusercontent.com/103154070/189376347-04f38e2d-fb30-4e6f-b1c8-f78c71c6088a.png)
+![svg](https://user-images.githubusercontent.com/103154070/189376650-9157daf6-754b-4251-b7d6-7ace579c8e2e.png)
+
+
+
+- We received the best results when running the newton-cg solver when using the logistic regressions model (87% Accuracy).  The confusion matrix from this solver shows us that we did not have any patients that were falsly predicted to have a high level of severity with an actual low severity nor did it predict that any had a high level when it was actually a low level. When we compared the results from the newton-cg solver, to those of the SVM model we can see that the SVM model produces a higher accuracy score of 88%.  Now we need to determine which model is actual better for evaluating our data.  Since we do not desire having a high number of false negatives or false positives, we are looking for the best F1-score that the models will provide. 
+ 
+<img width="453" alt="f1svg" src="https://user-images.githubusercontent.com/103154070/189381897-6f9fd9e8-82f8-4e5c-8fc3-d69a86965f4e.png"> <img width="446" alt="flnew" src="https://user-images.githubusercontent.com/103154070/189381792-9543df3b-8e91-4cec-ba2d-81c7b583b908.png">
+
+- We can see that the F1-Scores from both models are very close to one another, however, we selected the SVM model as providing the best predictions for our dataset.
+
+
+*Pros and Cons of Using these models*
+
+- Pros of Logistic Regression
+  - Ability to solve classification problems 
+  - It can have different have different decision boundaries with different weights that are near the optimal point
+  - Works well with already identified independent variables 
+  
+- Cons of Logistic Regression
+  - Vunerable to overfitting 
+  - Highly prone to outliers
+
+- Pros of SVM
+  - Tries to find the best margin that seperates the classes that reduce the risk of error on the data
+  - Provides the best prediction for the model under study 
+  - Decreased risk of overfitting
+  
+- Cons of SVM
+  - As the support vector classifier works by putting data points, above and below the classifying hyperplane there is no probabilistic explanation      for the classification
+
+
 
 ## Dashboard 
 *Include link to dash or a video of dash demo*
