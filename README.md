@@ -33,11 +33,21 @@ https://www.kaggle.com/datasets/rishidamarla/cancer-patients-data
 
 This is an excel document that list hundreds of cancer patient lifestlye.  This includes a combination of lifestlye choices and symptoms presented in each patient.  There are a total of 25 columns and 1000 rows within this dataset.
 
+
+
 ## Data Exploration
-- We are using a cleaned verison of “Cancer Patients Data” which is the excel file gathered from Kaggle. We converted this excel file to a csv and removed columns that represented symptoms as those would not be useful in our analysis. After doing this, weare left with the columns shown here.
+
+*Understanding our Data*
+
+<img width="468" alt="database" src="https://user-images.githubusercontent.com/103154070/189386426-9049ab2d-d83b-4b5a-880d-2d939087766c.png">
+
+Within our dataset we have an extensive list of columns that represent a combination of symptoms and lifetyle choices that were provdied by the patients.  We created a SQLlite database to better vizulaize these factors and determine which we would require for our analysis.
+
+
+We are using a cleaned verison of “Cancer Patients Data” which is the excel file gathered from Kaggle. We converted this excel file to a csv and removed columns that represented symptoms as those would not be useful in our analysis. After doing this, weare left with the columns shown here.
 ![Screen Shot 2022-08-28 at 2 07 30 PM](https://user-images.githubusercontent.com/103154070/187778715-8747f6a1-5f50-4879-a4ca-c5fd8ff24447.png)
 
--   We also renamed the labels for the “Cancer Severity” column; replacing “Low,” “Medium,” and “High” with “1,  2 and 3” respectively. This step was completed in order to prevent any ValueErrors that we may receive while completing our analysis.
+We also renamed the labels for the “Cancer Severity” column; replacing “Low,” “Medium,” and “High” with “1,  2 and 3” respectively. This step was completed in order to prevent any ValueErrors that we may receive while completing our analysis.
 
 ## Data Analysis 
 
@@ -94,7 +104,7 @@ We want to learn about patterns between lifestyle choices and the severity of ca
 
 ![PC](https://user-images.githubusercontent.com/103154070/189383560-bfc8e0f3-bbb8-4ad4-ae3a-25cdcab0cdce.png)
 
-- We are curious to learn more about the connection between lifestyle choices and their impact on the severity of cancer seen within our dataset.  From this Pearson Correlation we can notice that the strongest connection to cancer severity is obesity.  It is then followed by Alcohol use, Dust Allergy, Balanced Diet, Genetic Risk and Passive Smoker, respectivly.
+We are curious to learn more about the connection between lifestyle choices and their impact on the severity of cancer seen within our dataset.  From this Pearson Correlation we can notice that the strongest connection to cancer severity is obesity.  It is then followed by Alcohol use, Dust Allergy, Balanced Diet, Genetic Risk and Passive Smoker, respectivly.
 
 
 
