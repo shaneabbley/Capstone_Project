@@ -191,9 +191,9 @@ We are curious to learn more about the connection between lifestyle choices and 
 
 ## Results 
 
-## Recommendations for Future Analysis
-*include anything that we would have done differently*
+Although we have found trends between lifestlye choices and the severity level of cancer, within this dataset we can not confidently conclude that there are specific lifestlye choices that will impact a person's ability to develop or increase the severity of the disease.  In our prediction attempts, we discovered that a Support Vector Machine model works best with our dataset, providing an f1-score of 1.00 for the highest severity level, 0.83 for the middle severity level, and 0.80 for the lowest severity level.
 
+For a more thorough analysis, it would be helpful to have more context around the lifestlye choices of these patients. Did they increase their engagement in certain choices based on their cancer diagnosis, or were these increased as a result? It would also be beneficial to have a controlled group within our dataset. For example, there could be a group of patients who do not participate in any of the unfavorable/unhealthy lifestlye choices. 
 
 
 *Google Slides Presentation*
