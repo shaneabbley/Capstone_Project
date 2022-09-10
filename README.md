@@ -175,7 +175,10 @@ We are curious to learn more about the connection between lifestyle choices and 
 - Pandas
 
 *Interactive Elements*
-- User will be able to input patient ID to see symptom scores and lifestyle choices as a bar graph
+- User will be able to input patient ID to see 
+  - symptom scores and 
+  - lifestyle choices as a bar graph
+  - cancer severity as a gauge chart
 
 ## Database 
 
