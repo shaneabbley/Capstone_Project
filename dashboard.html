@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cancer Patient Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<Body style="background-color:rgb(204, 223, 244)" >   
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style="color:rgb(34, 34, 67)">Cancer Patient Data Board</h1>
+        <p>Use the interactive charts below to explore the information</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5 style="font-family: Magneto">Patient ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Symptoms Scores</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div id="bar"></div>
+      </div>
+      <div class="col-sm-2">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Initial Data Visualization</h1>
+      <h3>Grouping by Cancer Severity</h3>
+      <p style="font-size: 21px" class="text-justify">We speculated that higher scores on bad lifestyle choices such as alcohol use, smoking,
+        or even being exposed to second-hand smoking smoke (passive smoking) can lead to higher 
+        cancer severity. We focused on those 3 features and first grouped them by cancer severity.
+        Then using stacked bar graphs we displayed level of alcohol use, smoking, or passive smoking 
+        (scored 1-8) in each level of cancer severity.
+      </p>
+      <div class="col-md-5">
+        <img src="Resources/AU.png" alt="HTML" width="550" height="350">
+        <p style="font-size: 18px" class="text-justify">Most of the severe alcohol users (scored 7-8) are at the
+          highest cancer severity level, while mild users (scored 1-2) are at the lowest severity
+          level.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-offset-2">
+        <img src="Resources/Smoke.png" alt="HTML" width="550" height="350">
+        <p style="font-size: 18px" class="text-justify">Cancer severity level one and two seemed to
+        have very similar looking distribution for patient smoking scores.</p>
+      </div> 
+      <div class="col-md-5 col-md-offset-3">
+        <img src="Resources/Passive.png" alt="HTML" width="550" height="350">
+        <p style="font-size: 18px" class="text-justify">Majority of the passive smokers who were at the highest 
+          cancer severity also scored the highest on the passive smoking score (scored 7-8).</p>
+      </div> 
+    </div> 
+    <div class="row">
+      <h1>Outcomes from Machine Learning Model</h1>
+      <div class="col-md-12">
+        <img class="image hp" src="Resources/Feature_Importance.png" alt="HTML" width="800" height="550" id="hp">
+        <br></br>
+        <h3 class="text-justify">We ran multiple machine learning models on our dataset. As summarized in the bubble chart (left),
+          we see that "Occupational Hazard" is a highly ranked feature, followed by "Air Pollution",
+          "Smoking", and "Genetic Risk". Out of all the features we hypothesized (above) would be top ranked,
+          the machine learning models only highlighted "Smoking". </h3>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
