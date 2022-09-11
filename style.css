@@ -1,4 +1,17 @@
 .hp {
     float: "left";
-    margin: 20 0 20px 0;
+    margin: 0px 0px 0px 20px;
+} 
+
+.image-txt-container {
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+}
+
+/* below is just to make things easier to see, not required */
+body > div {
+    /*border:1px dashed red; */
+    margin-bottom:45px;
+    margin-right: 15px;
 }

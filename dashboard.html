@@ -49,35 +49,218 @@
         Then using stacked bar graphs we displayed level of alcohol use, smoking, or passive smoking 
         (scored 1-8) in each level of cancer severity.
       </p>
+      <br></br>
       <div class="col-md-5">
-        <img src="Resources/AU.png" alt="HTML" width="550" height="350">
+        <img src="Resources/AU.png" alt="HTML" width="550" height="350" class="img-thumbnail">
+        <br></br>
         <p style="font-size: 18px" class="text-justify">Most of the severe alcohol users (scored 7-8) are at the
           highest cancer severity level, while mild users (scored 1-2) are at the lowest severity
           level.
         </p>
       </div>
       <div class="col-md-5 col-md-offset-2">
-        <img src="Resources/Smoke.png" alt="HTML" width="550" height="350">
+        <img src="Resources/Smoke.png" alt="HTML" width="550" height="350" class="img-thumbnail">
+        <br></br>
         <p style="font-size: 18px" class="text-justify">Cancer severity level one and two seemed to
         have very similar looking distribution for patient smoking scores.</p>
       </div> 
       <div class="col-md-5 col-md-offset-3">
-        <img src="Resources/Passive.png" alt="HTML" width="550" height="350">
+        <img src="Resources/Passive.png" alt="HTML" width="550" height="350" class="img-thumbnail">
+        <br></br>
         <p style="font-size: 18px" class="text-justify">Majority of the passive smokers who were at the highest 
           cancer severity also scored the highest on the passive smoking score (scored 7-8).</p>
       </div> 
-    </div> 
+    </div>
+    <br></br> 
     <div class="row">
       <h1>Outcomes from Machine Learning Model</h1>
-      <div class="col-md-12">
-        <img class="image hp" src="Resources/Feature_Importance.png" alt="HTML" width="800" height="550" id="hp">
+      <br></br>
+      <h3>Feature Importance Outcomes from the Machine Learning Models</h3>
+      <div class="image-txt-container">
+        <img class="image" src="Resources/Feature_Importance.png" alt="HTML" width="800" height="550" id="hp" class="img-thumbnail">
         <br></br>
-        <h3 class="text-justify">We ran multiple machine learning models on our dataset. As summarized in the bubble chart (above),
+        <h3 class="text-justify hp">We ran multiple machine learning models on our dataset. As summarized in the bubble chart (above),
           we see that "Occupational Hazard" is a highly ranked feature, followed by "Air Pollution",
           "Smoking", and "Genetic Risk". Out of all the features we hypothesized previously would be top ranked,
           the machine learning models only highlighted "Smoking". </h3>
       </div>
     </div>
+    <br></br>
+    <h3>Confusion Matrices Generated from the Machine Learning Models</h3>
+    <br></br>
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-htwp{background-color:#343434;color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;font-size:24px;
+        font-style:italic;text-align:center;vertical-align:top}
+      .tg .tg-9tqw{background-color:#343434;color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;font-size:24px;
+        text-align:center;vertical-align:top}
+      .tg .tg-bvee{background-color:#00009b;color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;font-size:28px;
+        text-align:center;vertical-align:top}
+      .tg .tg-uqxp{background-color:#c0c0c0;color:#000000;font-family:Tahoma, Geneva, sans-serif !important;font-size:18px;
+        font-weight:bold;text-align:right;vertical-align:top}
+      .tg .tg-4q21{background-color:#343434;border-color:#000000;color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;
+        font-size:24px;text-align:center;vertical-align:top}
+      .tg .tg-qwqg{background-color:#343434;border-color:#000000;color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;
+        font-size:24px;font-style:italic;text-align:center;vertical-align:top}
+      .tg .tg-jxv9{background-color:#00009b;border-color:#000000;color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;
+        font-size:28px;text-align:center;vertical-align:top}
+      .tg .tg-wtos{background-color:#c0c0c0;border-color:#000000;font-family:Tahoma, Geneva, sans-serif !important;font-size:18px;
+        font-weight:bold;text-align:right;vertical-align:top}
+      .tg .tg-hx8n{background-color:#c0c0c0;font-family:Tahoma, Geneva, sans-serif !important;font-size:18px;font-weight:bold;
+        text-align:right;vertical-align:top}
+      </style>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-jxv9"><span style="font-weight:bold">LR-liblinear</span></th>
+          <th class="tg-4q21">Predicted Low</th>
+          <th class="tg-4q21">Predicted Medium</th>
+          <th class="tg-4q21">Predicted High</th>
+          <th class="tg-jxv9"><span style="font-weight:bold">LR-lbfgs</span></th>
+          <th class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Low</span></th>
+          <th class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Medium</span></th>
+          <th class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted High</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-qwqg">Actual Low</td>
+          <td class="tg-wtos">69</td>
+          <td class="tg-wtos">26</td>
+          <td class="tg-wtos">0</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Low</span></td>
+          <td class="tg-hx8n">77</td>
+          <td class="tg-hx8n">18</td>
+          <td class="tg-hx8n">0</td>
+        </tr>
+        <tr>
+          <td class="tg-qwqg">Actual Medium</td>
+          <td class="tg-wtos">21</td>
+          <td class="tg-wtos">81</td>
+          <td class="tg-wtos">8</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Medium</span></td>
+          <td class="tg-hx8n">18</td>
+          <td class="tg-hx8n">88</td>
+          <td class="tg-hx8n">4</td>
+        </tr>
+        <tr>
+          <td class="tg-qwqg">Actual High</td>
+          <td class="tg-wtos">0</td>
+          <td class="tg-wtos">0</td>
+          <td class="tg-wtos">95</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual High</span></td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-hx8n">95</td>
+        </tr>
+        <tr>
+          <td class="tg-bvee"><span style="font-weight:bold">Newton- cg</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Low</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Medium</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted High</span></td>
+          <td class="tg-bvee"><span style="font-weight:bold">LR-sag</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Low</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Medium</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted High</span></td>
+        </tr>
+        <tr>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Low</span></td>
+          <td class="tg-uqxp">77</td>
+          <td class="tg-uqxp">18</td>
+          <td class="tg-uqxp">0</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Low</span></td>
+          <td class="tg-hx8n">72</td>
+          <td class="tg-hx8n">23</td>
+          <td class="tg-hx8n">0</td>
+        </tr>
+        <tr>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Medium</span></td>
+          <td class="tg-uqxp">18</td>
+          <td class="tg-uqxp">88</td>
+          <td class="tg-uqxp">4</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Medium</span></td>
+          <td class="tg-hx8n">18</td>
+          <td class="tg-hx8n">88</td>
+          <td class="tg-hx8n">4</td>
+        </tr>
+        <tr>
+          <td class="tg-htwp"><span style="font-weight:400">Actual High</span></td>
+          <td class="tg-uqxp">0</td>
+          <td class="tg-uqxp">0</td>
+          <td class="tg-uqxp">95</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual High</span></td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-hx8n">95</td>
+        </tr>
+        <tr>
+          <td class="tg-bvee"><span style="font-weight:bold">LR-saga</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Low</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Medium</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted High</span></td>
+          <td class="tg-bvee"><span style="font-weight:bold">SVC-linear</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Low</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted Medium</span></td>
+          <td class="tg-9tqw"><span style="font-weight:400;font-style:normal">Predicted High</span></td>
+        </tr>
+        <tr>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Low</span></td>
+          <td class="tg-hx8n">72</td>
+          <td class="tg-hx8n">23</td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Low</span></td>
+          <td class="tg-uqxp">76</td>
+          <td class="tg-uqxp">19</td>
+          <td class="tg-uqxp">0</td>
+        </tr>
+        <tr>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Medium</span></td>
+          <td class="tg-hx8n">18</td>
+          <td class="tg-hx8n">84</td>
+          <td class="tg-hx8n">8</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual Medium</span></td>
+          <td class="tg-uqxp">18</td>
+          <td class="tg-uqxp">92</td>
+          <td class="tg-uqxp">0</td>
+        </tr>
+        <tr>
+          <td class="tg-htwp"><span style="font-weight:400">Actual High</span></td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-hx8n">0</td>
+          <td class="tg-hx8n">95</td>
+          <td class="tg-htwp"><span style="font-weight:400">Actual High</span></td>
+          <td class="tg-uqxp">0</td>
+          <td class="tg-uqxp">0</td>
+          <td class="tg-uqxp">95</td>
+        </tr>
+      </tbody>
+      </table>
+      <br></br>
+      <h2 style="font-size: 21px" class="text-justify">The table above displays the confusion matrix
+        for all the machine learning models that were run over the course of our analysis. From the 
+        outcomes above we see that SVC model has the best results to predict the highest cancer severity.
+      </h2>
+      <br></br>
+      <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: rgb(75, 88, 168);
+          color: white;
+          text-align: center;
+        }
+        </style>
+        
+        <div class="footer">
+          <p>Project Biology</p>
+          <p>Raima Ghosh - Shane Abbley - Janell Napper - Amit Choksi</p>
+        </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
