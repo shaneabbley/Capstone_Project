@@ -165,7 +165,6 @@ We are curious to learn more about the connection between lifestyle choices and 
 
 
 ## Dashboard 
-*Include link to dash or a video of dash demo*
 
 *Tools Used to Build and Run the Dashboard are as follows*
 - Javascript (d3.json)
@@ -179,6 +178,8 @@ We are curious to learn more about the connection between lifestyle choices and 
   - symptom scores and 
   - lifestyle choices as a bar graph
   - cancer severity as a gauge chart
+
+For a demonstration of the dashboard please see *Google Slides*
 
 ## Database 
 
