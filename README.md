@@ -32,10 +32,20 @@ This is an excel document that list hundreds of cancer patient lifestyle.  This 
 
 <img width="468" alt="database" src="https://user-images.githubusercontent.com/103154070/189386426-9049ab2d-d83b-4b5a-880d-2d939087766c.png">
 
-Within our dataset we have an extensive list of columns that represent a combination of symptoms and lifetyle choices that were provdied by the patients.  We created a SQLlite database to better vizulaize these factors and determine which we would require for our analysis.
+Within our dataset we have an extensive list of columns that represent a combination of symptoms and lifetyle choices that were provdied by the patients.  We created a SQLlite database to better vizulaize these factors and determine which we would require for our analysis. We wanted a locally hosted database and our dataset is relatively small, so we chose to use a SQLite database. A simple way to create a SQLite database is to use the sqlite3 module in python. After creating a database, queries can be run with SQL syntax. A table was created for both the symptoms and the lifestyle choices. A combined table was created using a full outer join of the lifestyle and symptoms tables.
+
+
+
+
+
+
+
+
 
 
 We are using a cleaned verison of “Cancer Patients Data” which is the excel file gathered from Kaggle. We converted this excel file to a csv and removed columns that represented symptoms as those would not be useful in our analysis. After doing this, weare left with the columns shown here.
+
+
 ![Screen Shot 2022-08-28 at 2 07 30 PM](https://user-images.githubusercontent.com/103154070/187778715-8747f6a1-5f50-4879-a4ca-c5fd8ff24447.png)
 
 We also renamed the labels for the “Cancer Severity” column; replacing “Low,” “Medium,” and “High” with “1,  2 and 3” respectively. This step was completed in order to prevent any ValueErrors that we may receive while completing our analysis.
@@ -180,13 +190,6 @@ We are curious to learn more about the connection between lifestyle choices and 
   - cancer severity as a gauge chart
 
 For a demonstration of the dashboard please see *Google Slides*
-
-## Database 
-
-*Description of interface with the project*
-*Description of two tables used*
-*Description of join/s*
-*Description of connection string*
 
 
 ## Results 
