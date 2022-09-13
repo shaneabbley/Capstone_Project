@@ -43,10 +43,10 @@ We also renamed the labels for the “Cancer Severity” column; replacing “Lo
 ## Data Analysis 
 
 
-Here are a few preliminary questions:
-1. Is there any lifestyle choice that is connected to higher incidence of cancer
-2. Is there any lifestyle choice associated with more severe outcomes of cancer
-3. Are there multiple lifestyle factors that are associated higher incidence
+After looking over the data, we wanted to answer these three questions:
+1. Which Lifestlye choices are most associated with a higher severity of cancer?
+2. How can we most accurately predict cancer severity using machine learning?
+3. Which Machine learning model predicts the severity of cancer most accurately?
 
 In order to calculate the amount of patients per cancer severity level, we grouped the data by the level and counted the number of values per level.  After obtaining our values we converted our values to percentages and used MatPlotLib to create a pie graph that represents this data as shown below.
 
@@ -191,7 +191,27 @@ For a demonstration of the dashboard please see *Google Slides*
 
 ## Results 
 
+
+<img width="652" alt="Feature_Importance" src="https://user-images.githubusercontent.com/103154070/190012959-3036b2e6-1a79-4f36-afd7-5561a3113640.png">
+
+
 Although we have found trends between lifestyle choices and the severity level of cancer, within this dataset we can not confidently conclude that there are specific lifestyle choices that will impact a person's ability to develop or increase the severity of the disease.  In our prediction attempts, we discovered that a Support Vector Machine model works best with our dataset, providing an f1-score of 1.00 for the highest severity level, 0.83 for the middle severity level, and 0.80 for the lowest severity level.
+
+After conducting our procucing our machine learning model predictions we were able to answer our initial questions:
+
+1. Which Lifestlye choices are most associated with a higher severity of cancer?
+ *Our model predicted occupational hazards, air pollution, and smoking as the three most relevant lifestyle factors.*
+
+2. How can we most accurately predict cancer severity using machine learning?
+
+ *We can try to run the algorithm again without some of the features that had a minimal impact on this models predictions. (ie. With the feature inprotance algorithm shown above, Alcohol use Balanced diet, Chronic Lung Disease and Dust Allergy columns could be removed from the algorithm)*
+
+3. Which Machine learning model predicts the severity of cancer most accurately?
+
+ *We found that support vector machine (SVM) gave us the most accurate results.*
+ 
+ 
+ 
 
 For a more thorough analysis, it would be helpful to have more context around the lifestyle choices of these patients. Did they increase their engagement in certain choices based on their cancer diagnosis, or were these increased as a result? It would also be beneficial to have a controlled group within our dataset. For example, there could be a group of patients who do not participate in any of the unfavorable/unhealthy lifestyle choices. 
 
