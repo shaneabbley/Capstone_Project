@@ -1,0 +1,22 @@
+name1,name2,Predicted Low,Predicted Medium,Predicted High
+None,Actual Low,0,0,0
+None,Actual Medium,0,0,0
+None,Actual High,0,0,0
+LR-liblinear,Actual Low,69,26,0
+LR-liblinear,Actual Medium,21,81,8
+LR-liblinear,Actual High,0,0,95
+LR-lbfgs,Actual Low,77,18,0
+LR-lbfgs,Actual Medium,18,88,4
+LR-lbfgs,Actual High,0,0,95
+newton-cg,Actual Low,77,18,0
+newton-cg,Actual Medium,18,88,4
+newton-cg,Actual High,0,0,95
+LR-sag,Actual Low,72,23,0
+LR-sag,Actual Medium,18,88,4
+LR-sag,Actual High,0,0,95
+LR-saga,Actual Low,72,23,0
+LR-saga,Actual Medium,18,84,8
+LR-saga,Actual High,0,0,95
+SVC-linear,Actual Low,76,19,0
+SVC-linear,Actual Medium,18,92,0
+SVC-linear,Actual High,0,0,95
